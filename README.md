@@ -1,14 +1,15 @@
 # Проект по автоматизации тестовых сценариев для страницы "Работа в Тинькофф"
-## Содержание:
 ____
+## Содержание:
+
 - Технологии и инструменты
 - Тест-кейсы
-- Cборка в Jenkins
 - Запуск из терминала
+- Cборка в Jenkins
 - Allure отчет
 - Интеграция с Allure TestOps
 - Интеграция с Jira
-- Уведомление в Telegram при помощи бота
+- Уведомления в Telegram с использованием бота
 - Примеры видео выполнения тестов на Selenoid
 ____
 ## Технологии и инструменты:
@@ -43,7 +44,7 @@ ____
 ____
 
 ## Команды для запуска из терминала
-___
+
 ***Локальный запуск:***
 ```bash  
 gradle clean test
@@ -63,12 +64,57 @@ ____
 
 ## Сборка в Jenkins
 <p align="center">  
-<a href="https://jenkins.autotests.cloud/job/QAGuru_HW_15/"><img src="images/screen/jenkins_dashboard.png" alt="Jenkins" width="950"/></a>  
+<img src="images/screen/jenkins_dashboard.png" alt="Jenkins" width="950"/></a>  
 </p>
 
 ____
 
 ## Allure отчет
+### Основная страница
 <p align="center">  
-<a href="https://jenkins.autotests.cloud/job/QAGuru_HW_15/5/allure/"><img title="Allure Overview Dashboard" src="images/screen/jenkins_overview.png" width="850">  
+<img title="Allure Overview Dashboard" src="images/screen/jenkins_overview.png" width="850"></a>  
 </p>  
+
+### *Тест-кейсы*
+<p align="center">  
+<img title="Allure Tests" src="images/screen/allure_tests.png" width="850">  
+</p>
+
+____
+
+## Интеграция с Allure TestOps
+### Dashboards
+
+<p align="center">  
+<img title="Allure TestOps Dashboard" src="images/screen/allure_overview.png" width="850">  
+</p>
+
+### Результат выполнения автотеста
+
+<p align="center">  
+<img title="Allure Tests" src="images/screen/tests.png" width="850">  
+</p>
+
+____
+
+## Интеграция с Jira
+
+<p align="center">  
+<img title="Jira" src="images/screen/jira.png" width="">  
+</p>
+
+____
+
+## Уведомления в Telegram с использованием бота
+
+<p align="center">  
+<img title="TG Bot" src="images/screen/jira.png" width="">  
+</p>
+
+____
+
+## Примеры видео выполнения тестов на Selenoid
+
+<p align="center">
+<img title="Selenoid Video" src="images/video/tinkoff.gif" width="550" height="350"  alt="video">   
+</p>
