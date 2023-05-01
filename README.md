@@ -4,7 +4,7 @@ ____
 
 - Технологии и инструменты
 - Тест-кейсы
-- Запуск из терминала
+- Команды для запуска из терминала
 - Cборка в Jenkins
 - Allure отчет
 - Интеграция с Allure TestOps
@@ -108,7 +108,7 @@ ____
 ## Уведомления в Telegram с использованием бота
 
 <p align="center">  
-<img title="TG Bot" src="images/screen/jira.png" width="">  
+<img title="TG Bot" src="images/screen/telegram_bot.png" width="">  
 </p>
 
 ____
@@ -116,5 +116,5 @@ ____
 ## Примеры видео выполнения тестов на Selenoid
 
 <p align="center">
-<img title="Selenoid Video" src="images/video/tinkoff.gif" width="550" height="350"  alt="video">   
+<img title="Selenoid Video" src="images/video/d9fbc0991.gif" width="550" height="350"  alt="video">   
 </p>
