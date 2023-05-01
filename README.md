@@ -1,8 +1,8 @@
 # Проект по автоматизации тестовых сценариев для страницы "Работа в Тинькофф"
-## **Содержание:**
+## Содержание:
 ____
 - Технологии и инструменты
-- Примеры автоматизированных тест-кейсов
+- Тест-кейсы
 - Cборка в Jenkins
 - Запуск из терминала
 - Allure отчет
@@ -11,7 +11,7 @@ ____
 - Уведомление в Telegram при помощи бота
 - Примеры видео выполнения тестов на Selenoid
 ____
-## <a name="Технологии и инструменты">**Технологии и инструменты:**</a>
+## Технологии и инструменты:
 
 <p align="center">  
 <a href="https://www.jetbrains.com/idea/"><img src="images/logo/Intelij_IDEA.svg" width="50" height="50"  alt="IDEA"/></a>  
@@ -29,9 +29,10 @@ ____
 Тесты в данном проекте написаны на языке <code>Java</code>, сборщик - <code>Gradle</code>. Так же были использованы фреймворки <code>JUnit 5</code> и <code>Selenide</code>.
 При прогоне тестов браузер запускается не локально, а в <code>Selenoid</code>.
 Для удаленного запуска реализована джоба в <code>Jenkins</code> с формированием Allure-отчета и отправкой результатов в <code>Telegram</code> при помощи бота. Так же реализована интеграция с <code>Allure TestOps</code> и <code>Jira</code>.
+
 ____
 
-## <a name="Тест-кейсы">**Тест-кейсы:**</a>
+## Тест-кейсы:
 - *Проверка перехода через вкладку 'Работа в IT'*
 - *Проверка перехода через вкладку 'Бизнес и процессы'*
 - *Проверка перехода через вкладку 'Работа с клиентами'*
@@ -41,7 +42,33 @@ ____
 
 ____
 
-## <a name="Сборка в Jenkins">**Сборка в Jenkins**</a>
+## Команды для запуска из терминала
+___
+***Локальный запуск:***
+```bash  
+gradle clean test
+```
+
+***Удалённый запуск через Jenkins:***
+```bash  
+clean test
+-Dbrowser="${BROWSER}"
+-DbrowserVersion="${BROWSERVERSION}"
+-DbrowserSize="${BROWSERSIZE}"
+-DbaseUrl="${BASEURL}"
+-DselenoidUrl="${SELENOIDURL}"
+```
+
+____
+
+## Сборка в Jenkins
 <p align="center">  
 <a href="https://jenkins.autotests.cloud/job/QAGuru_HW_15/"><img src="images/screen/jenkins_dashboard.png" alt="Jenkins" width="950"/></a>  
 </p>
+
+____
+
+## Allure отчет
+<p align="center">  
+<a href="https://jenkins.autotests.cloud/job/QAGuru_HW_15/5/allure/"><img title="Allure Overview Dashboard" src="images/screen/jenkins_overview.png" width="850">  
+</p>  
