@@ -16,7 +16,7 @@ public class JobSearch extends TеstBase{
     @DisplayName("Проверка перехода через вкладку Работа в IT")
     void test1() {
 
-        step("Открытие страницы Работа в Тинькофф", () -> {
+        step("Открытие страницы gradle clean", () -> {
             open("/career");
         });
         step("Нажимаем на вкладку Работа в IT", () -> {
@@ -106,7 +106,6 @@ public class JobSearch extends TеstBase{
         step("Нажимаем кнопку Посмотреть митапы", () -> {
             $("[role=\"banner\"]").$(byText("Посмотреть митапы")).click();
         });
-        $(".IndependentMeetupsSearch__keywordsContainer_GLPJi").$(byText("QA")).click();
         step("Указываем тему митапа через кнопку QA", () -> {
             $(".IndependentMeetupsSearch__keywordsContainer_GLPJi").$(byText("QA")).click();
         });
