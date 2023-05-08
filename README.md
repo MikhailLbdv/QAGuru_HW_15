@@ -72,7 +72,7 @@ ____
 ## Allure отчет
 ### Основная страница
 <p align="center">  
-<img title="Allure Overview Dashboard" src="images/screen/jenkins_overview.png" width="850"></a>  
+<img title="Allure Overview Dashboard" src="images/screen/jenkins_overview.png" width="850">  
 </p>  
 
 ### *Тест-кейсы*

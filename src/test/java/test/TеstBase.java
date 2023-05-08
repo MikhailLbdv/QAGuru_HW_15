@@ -16,18 +16,6 @@ public class TеstBase {
     @BeforeAll
     static void beforeAll() {
 
-        Configuration.browser = "chrome";
-        Configuration.browserVersion = "100.0";
-        Configuration.browserSize = "1920x1080";
-        Configuration.baseUrl = "https://www.tinkoff.ru";
-        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
-//        Configuration.holdBrowserOpen = true;
-
-//        Configuration.browserSize = System.getProperty("browserSize","1920x1080");
-//        Configuration.browser = System.getProperty("browser", "chrome");
-//        Configuration.browserVersion = System.getProperty("browserVersion", "100.0");
-//        Configuration.baseUrl = System.getProperty("baseUrl", "https://www.tinkoff.ru");
-//        Configuration.remote = "https://user1:1234@"+ System.getProperty("selenoidUrl", "selenoid.autotests.cloud/wd/hub");
 
         DesiredCapabilities capabilities = new DesiredCapabilities(); // Добавляем запись видео
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(

@@ -14,7 +14,7 @@ public class JobSearch extends TеstBase{
 
     @Test
     @DisplayName("Проверка перехода через вкладку Работа в IT")
-    void test1() {
+    void tabWorkInIT() {
 
         step("Открытие страницы gradle clean", () -> {
             open("/career");
@@ -29,7 +29,7 @@ public class JobSearch extends TеstBase{
 
     @Test
     @DisplayName("Проверка перехода через вкладку Бизнес и процессы")
-    void test2() {
+    void tabBusinessAndProcesses() {
 
         step("Открытие страницы Работа в Тинькофф", () -> {
             open("/career");
@@ -44,7 +44,7 @@ public class JobSearch extends TеstBase{
 
     @Test
     @DisplayName("Проверка перехода через вкладку Работа с клиентами")
-    void test3() {
+    void tabWorkingWithClients() {
 
         step("Открытие страницы Работа в Тинькофф", () -> {
             open("/career");
@@ -59,7 +59,7 @@ public class JobSearch extends TеstBase{
 
     @Test
     @DisplayName("Проверка выбора в популярных специализациях Мобильная разработка")
-    void test4() {
+    void choiceMobileDevelopment() {
 
         step("Открытие страницы Работа в ИТ Тинькофф", () -> {
             open("/career/it/about/");
@@ -77,7 +77,7 @@ public class JobSearch extends TеstBase{
 
     @Test
     @DisplayName("Проверка перехода на страницу Митапы в Тинькофф")
-    void test5() {
+    void pageMeetupInTinkoff() {
 
         step("Открытие страницы Работа в ИТ Тинькофф", () -> {
             open("/career/it/about/");
@@ -95,7 +95,7 @@ public class JobSearch extends TеstBase{
 
     @Test
     @DisplayName("Выбор темы митапа на странице Митапы в Тинькофф")
-    void test6() {
+    void topicSearch() {
 
         step("Открытие страницы Работа в ИТ Тинькофф", () -> {
             open("/career/it/about/");
